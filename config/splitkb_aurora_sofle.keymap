@@ -84,6 +84,14 @@
                 <&kp RBRC>,
                 <&kp GT>;
         };
+        QUOTES_TD: QUOTES_TD {
+            compatible = "zmk,behavior-tap-dance";
+            label = "QUOTES_TD";
+            #binding-cells = <0>;
+            bindings =
+                <&kp SINGLE_QUOTE>,
+                <&kp DOUBLE_QUOTES>;
+        };
     };
 
     keymap {
@@ -119,10 +127,10 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-    &trans  &trans    &trans    &trans     &trans     &trans                  &trans  &trans  &trans  &trans  &trans    &trans
-    &trans  &trans  &kp HOME    &kp UP    &kp END  &kp PG_UP                   &none   &none   &none   &none   &none     &none
-    &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN                   &none   &none   &none   &none   &none     &none
-&kt LSHIFT   &none     &none     &none     &trans     &trans  &trans  &trans  &trans   &none   &none   &none   &none  &kp PIPE
+    &trans  &trans    &trans    &trans     &trans     &trans                  &trans  &trans  &trans  &trans  &trans  &kp DELETE
+    &trans  &trans  &kp HOME    &kp UP    &kp END  &kp PG_UP                   &none   &none   &none   &none   &none       &none
+    &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN                   &none   &none   &none   &none   &none       &none
+&kt LSHIFT   &none     &none     &none     &trans     &trans  &trans  &trans  &trans   &none   &none   &none   &none    &kp PIPE
                       &trans    &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
@@ -139,11 +147,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3         &kp F4         &kp F5                      &kp F6      &kp F7  &kp F8  &kp F9  &kp F10  &trans
-&trans  &trans  &trans  &trans  &LPAR_TD_LBKT  &RPAR_TD_RBKT                  &LCB_TD_LT  &LCB_TD_LT  &trans  &trans   &trans  &trans
-&trans  &trans  &kp LT  &trans         &kp GT         &trans                      &trans      &trans  &trans  &trans   &trans  &trans
-&trans  &trans  &trans  &trans         &trans         &trans  &trans  &trans      &trans      &trans  &trans  &trans   &trans  &trans
-                &trans  &trans         &trans         &trans  &trans  &trans      &trans      &trans  &trans  &trans
+&trans    &kp F1    &kp F2      &kp F3         &kp F4         &kp F5                      &kp F6      &kp F7     &kp F8     &kp F9    &kp F10  &trans
+&trans    &trans    &trans  &QUOTES_TD  &LPAR_TD_LBKT  &RPAR_TD_RBKT                  &LCB_TD_LT  &LCB_TD_LT     &trans     &trans     &trans  &trans
+&trans  &kp EXCL  &kp PLUS   &kp EQUAL       &kp STAR      &kp GRAVE                   &kp TILDE    &kp FSLH  &kp UNDER  &kp MINUS  &kp QMARK  &trans
+&trans    &trans    &trans      &trans         &trans         &trans  &trans  &trans      &trans      &trans     &trans     &trans     &trans  &trans
+                    &trans      &trans         &trans         &trans  &trans  &trans      &trans      &trans     &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -170,10 +178,10 @@
 
         mac_capslock_layer {
             bindings = <
-         &none  &none         &none     &none          &none          &none                &none  &none  &none  &none  &none  &none
-         &none  &none  &kp LA(LEFT)    &kp UP  &kp LA(RIGHT)      &kp PG_UP                &none  &none  &none  &none  &none  &none
-         &none  &none      &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN                &none  &none  &none  &none  &none  &none
-&kt LEFT_SHIFT  &none         &none     &none          &none          &none  &none  &none  &none  &none  &none  &none  &none  &none
+         &none  &none         &none     &none          &none          &none                &none  &none  &none  &none  &none  &kp DEL
+         &none  &none  &kp LA(LEFT)    &kp UP  &kp LA(RIGHT)      &kp PG_UP                &none  &none  &none  &none  &none    &none
+         &none  &none      &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN                &none  &none  &none  &none  &none    &none
+&kt LEFT_SHIFT  &none         &none     &none          &none          &none  &none  &none  &none  &none  &none  &none  &none    &none
                               &none     &none          &none          &none  &none  &none  &none  &none  &none  &none
             >;
 
