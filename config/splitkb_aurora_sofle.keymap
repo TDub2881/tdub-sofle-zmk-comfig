@@ -94,7 +94,7 @@
         };
     };
 
-    keymap {
+    keymap {[]
         compatible = "zmk,keymap";
 
         default_layer {
@@ -130,7 +130,7 @@
     &trans  &trans    &trans    &trans     &trans     &trans                  &trans  &trans  &trans  &trans  &trans  &kp DELETE
     &trans  &trans  &kp HOME    &kp UP    &kp END  &kp PG_UP                   &none   &none   &none   &none   &none       &none
     &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN                   &none   &none   &none   &none   &none       &none
-&kt LSHIFT   &none     &none     &none     &trans     &trans  &trans  &trans  &trans   &none   &none   &none   &none    &kp PIPE
+&kt LSHIFT   &none     &none     &none     &trans     &trans  &mo 6  &trans  &trans   &none   &none   &none   &none    &kp PIPE
                       &trans    &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
