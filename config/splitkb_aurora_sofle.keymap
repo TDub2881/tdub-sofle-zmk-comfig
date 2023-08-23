@@ -192,10 +192,10 @@
         mac_overlay_layer {
             bindings = <
 &kp LGUI  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&mo 4   &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &kp LCTRL &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&mo 4   &trans  &trans  &trans  &trans    &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &kp LCTRL &trans &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "maclyr";
