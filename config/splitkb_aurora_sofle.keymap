@@ -71,10 +71,10 @@
         LCB_TD_LT: LCB_TD_LT {
             compatible = "zmk,behavior-tap-dance";
             label = "LCB_TD_LT";
-            #binding-cells = <0>;
+            #binding-cells = <0>;   
             bindings =
                 <&kp LBRC>,
-                <&kp LT>;
+                <&kp LT>; 
         };
         RCB_TD_BT: RCB_TD_BT {
             compatible = "zmk,behavior-tap-dance";
