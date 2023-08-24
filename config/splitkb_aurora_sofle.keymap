@@ -116,7 +116,7 @@
             sensor-bindings =
                 <&inc_dec_kp LA(TAB) LA(LS(TAB))>,
                 <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-            label = "Win Base"
+            label = "Win Base";
         };
 
         win_capslock_layer {
