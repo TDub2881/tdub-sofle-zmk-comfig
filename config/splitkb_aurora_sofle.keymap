@@ -116,6 +116,7 @@
             sensor-bindings =
                 <&inc_dec_kp LA(TAB) LA(LS(TAB))>,
                 <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            label = "Win Base"
         };
 
         win_capslock_layer {
@@ -130,12 +131,12 @@
     &trans  &trans    &trans    &trans     &trans     &trans                  &trans  &trans  &trans  &trans  &trans  &kp DELETE
     &trans  &trans  &kp HOME    &kp UP    &kp END  &kp PG_UP                   &none   &none   &none   &none   &none       &none
     &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN                   &none   &none   &none   &none   &none       &none
-&kt LSHIFT   &none     &none     &none     &trans     &trans  &mo 6  &trans  &trans   &none   &none   &none   &none    &kp PIPE
+&kt LSHIFT   &none     &none     &none     &trans     &trans  &mo 6   &trans  &trans   &none   &none   &none   &none    &kp PIPE
                       &trans    &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-            label = "winlck";
+            label = "Win Lock";
         };
 
         lower_layer {
@@ -155,6 +156,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            label = "Lower";
         };
 
         raise_layer {
@@ -169,20 +171,21 @@
    &trans  &trans  &trans   &trans   &trans   &trans                       &trans     &trans     &trans    &trans     &trans    &trans
 &kp GRAVE  &kp N1  &kp N2   &kp N3   &kp N4   &kp N5                       &kp N6     &kp N7     &kp N8    &kp N9     &kp N0    &trans
    &kp F1  &kp F2  &kp F3   &kp F4   &kp F5   &kp F6                       &trans   &kp LEFT   &kp DOWN    &kp UP  &kp RIGHT    &trans
-   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans  &trans  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH
+   &kp F7  &kp F8  &kp F9   &kp F10  &kp F11  &kp F12 &trans  &trans  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH
                    &trans   &trans   &trans   &trans  &trans  &trans       &trans     &trans     &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            label = "Raise";
         };
 
         mac_capslock_layer {
             bindings = <
-         &none  &none         &none     &none          &none          &none                &none  &none  &none  &none  &none  &kp DEL
-         &none  &none  &kp LA(LEFT)    &kp UP  &kp LA(RIGHT)      &kp PG_UP                &none  &none  &none  &none  &none    &none
-         &none  &none      &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN                &none  &none  &none  &none  &none    &none
+         &none  &none         &none     &none          &none          &none               &none  &none  &none  &none  &none  &kp DEL
+         &none  &none  &kp LA(LEFT)    &kp UP  &kp LA(RIGHT)      &kp PG_UP               &none  &none  &none  &none  &none    &none
+         &none  &none      &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN               &none  &none  &none  &none  &none    &none
     &kt LSHFT  &none         &none     &none          &none          &none  &none  &none  &none  &none  &none  &none  &none    &none
-                              &none     &none          &none          &none  &none  &none  &none  &none  &none  &none
+                             &none     &none          &none          &none  &none  &none  &none  &none  &none  &none
             >;
 
             label = "maclck";
@@ -191,9 +194,9 @@
 
         mac_overlay_layer {
             bindings = <
-&kp LGUI  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&mo 4   &trans  &trans  &trans  &trans    &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LGUI &trans  &trans  &trans  &trans  &trans                 &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans                 &trans  &trans  &trans  &trans  &trans  &trans
+&mo 4   &trans  &trans  &trans  &trans    &trans                 &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &trans &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &kp LCTRL &trans &trans  &trans  &trans  &trans  &trans  &trans
             >;
