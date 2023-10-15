@@ -137,7 +137,7 @@
                 <&inc_dec_kp LC(RIGHT) LC(LEFT)>,
                 <&inc_dec_kp PAGE_DOWN PAGE_UP>;
 
-            label = "Mac Lck";
+            label = "Win Lck";
         };
 
         lower_layer {
@@ -189,7 +189,7 @@
                &trans        &trans    &trans         &none          &none    &none  &none    &none  &none  &none
             >;
 
-            label = "maclck";
+            label = "Mac Lck";
         };
 
         win_overlay_layer {
@@ -201,7 +201,7 @@
                           &trans  &trans  &kp LEFT_WIN  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
-            label = "winlyr";
+            label = "Win Lyr";
             sensor-bindings =
                 <&inc_dec_kp LG(TAB) LG(LS(TAB))>,
                 <&inc_dec_kp LG(RIGHT_ARROW) LG(LEFT_ARROW)>;
