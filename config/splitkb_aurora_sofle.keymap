@@ -63,41 +63,31 @@
             compatible = "zmk,behavior-tap-dance";
             label = "RPAR_TD_RBKT";
             #binding-cells = <0>;
-            bindings =
-                <&kp RPAR>,
-                <&kp RBKT>;
+            bindings = <&kp RPAR>, <&kp RBKT>;
         };
         LPAR_TD_LBKT: LPAR_TD_LBKT {
             compatible = "zmk,behavior-tap-dance";
             label = "LPAR_TD_LBKT";
             #binding-cells = <0>;
-            bindings =
-                <&kp LPAR>,
-                <&kp LBKT>;
+            bindings = <&kp LPAR>, <&kp LBKT>;
         };
         LCB_TD_LT: LCB_TD_LT {
             compatible = "zmk,behavior-tap-dance";
             label = "LCB_TD_LT";
             #binding-cells = <0>;
-            bindings =
-                <&kp LBRC>,
-                <&kp LT>;
+            bindings = <&kp LBRC>, <&kp LT>;
         };
         RCB_TD_BT: RCB_TD_BT {
             compatible = "zmk,behavior-tap-dance";
             label = "RCB_TD_BT";
             #binding-cells = <0>;
-            bindings =
-                <&kp RBRC>,
-                <&kp GT>;
+            bindings = <&kp RBRC>, <&kp GT>;
         };
         QUOTES_TD: QUOTES_TD {
             compatible = "zmk,behavior-tap-dance";
             label = "QUOTES_TD";
             #binding-cells = <0>;
-            bindings =
-                <&kp SINGLE_QUOTE>,
-                <&kp DOUBLE_QUOTES>;
+            bindings = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
         };
     };
 
@@ -115,7 +105,7 @@
             bindings = <
 &kp LGUI   &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                          &kp N6    &kp N7    &kp N8     &kp N9    &kp N0    &kp BSPC
 &kp TAB    &kp Q   &kp W     &kp E     &kp R      &kp T                           &kp Y     &kp U     &kp I      &kp O     &kp P     &kp GRAVE
-&mo MLCK   &kp A   &kp S     &kp D     &kp F      &kp G                           &kp H     &kp J     &kp K      &kp L     &kp SEMI  &kp ENTER
+&mo 4      &kp A   &kp S     &kp D     &kp F      &kp G                           &kp H     &kp J     &kp K      &kp L     &kp SEMI  &kp ENTER
 &kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B    &kp LBKT     &kp RBKT  &kp N     &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
                    &kp LGUI  &kp LALT  &kp LCTRL  &mo LUP  &kp SPACE    &kp RET   &mo LDWN  &kp BSPC  &kp RGUI   &kp RALT
             >;
@@ -192,12 +182,11 @@
 &none   &none  &none         &none     &none          &none                          &kp ESC  &none  &none  &none  &none  &kp DEL
 &none   &none  &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &kp PG_UP                      &none    &none  &none  &none  &none  &none
 &none   &none  &kp LEFT      &kp DOWN  &kp RIGHT      &kp PAGE_DOWN                  &none    &none  &none  &none  &none  &none
-&trans  &none  &none         &none     &none          &none          &none    &none  &none    &none  &none  &none  &none  &trans
+&trans  &none  &none         &none     &none          &none          &mo 6    &none  &none    &none  &none  &none  &none  &trans
                &trans        &trans    &trans         &none          &none    &none  &none    &none  &none  &none
             >;
 
             label = "maclck";
-            sensor-bindings = <&inc_dec_kp LG(TAB) LG(LS(TAB))>;
         };
 
         win_overlay_layer {
