@@ -196,7 +196,7 @@
             bindings = <
 &kp LEFT_CONTROL  &trans  &trans  &trans  &trans        &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans            &trans  &trans  &trans  &trans        &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&mo 4             &trans  &trans  &trans  &trans        &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&mo 1             &trans  &trans  &trans  &trans        &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans            &trans  &trans  &trans  &trans        &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                           &trans  &trans  &kp LEFT_WIN  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
