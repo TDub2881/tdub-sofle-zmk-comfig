@@ -133,7 +133,10 @@
                 &trans    &trans    &trans     &trans     &trans    &trans  &trans   &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings =
+                <&inc_dec_kp LC(RIGHT) LC(LEFT)>,
+                <&inc_dec_kp PAGE_DOWN PAGE_UP>;
+
             label = "Mac Lck";
         };
 
@@ -201,7 +204,7 @@
             label = "winlyr";
             sensor-bindings =
                 <&inc_dec_kp LG(TAB) LG(LS(TAB))>,
-                <&inc_dec_kp LG(TILDE) LG(GRAVE)>;
+                <&inc_dec_kp LG(RIGHT_ARROW) LG(LEFT_ARROW)>;
         };
 
         BT_layer {
