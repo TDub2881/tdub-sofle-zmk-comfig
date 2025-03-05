@@ -32,24 +32,28 @@
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 0 &to 0>;
         };
+
         btwin1: btwin1 {
             compatible = "zmk,behavior-macro";
             label = "BTWIN1";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 1 &to 5>;
         };
+
         bt2: bt2 {
             compatible = "zmk,behavior-macro";
             label = "BT2";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 2 &to 5>;
         };
+
         bt3: bt3 {
             compatible = "zmk,behavior-macro";
             label = "BT3";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 3 &to 0>;
         };
+
         bt4: bt4 {
             compatible = "zmk,behavior-macro";
             label = "BT4";
@@ -65,24 +69,28 @@
             #binding-cells = <0>;
             bindings = <&kp RPAR>, <&kp RBKT>;
         };
+
         LPAR_TD_LBKT: LPAR_TD_LBKT {
             compatible = "zmk,behavior-tap-dance";
             label = "LPAR_TD_LBKT";
             #binding-cells = <0>;
             bindings = <&kp LPAR>, <&kp LBKT>;
         };
+
         LCB_TD_LT: LCB_TD_LT {
             compatible = "zmk,behavior-tap-dance";
             label = "LCB_TD_LT";
             #binding-cells = <0>;
             bindings = <&kp LBRC>, <&kp LT>;
         };
+
         RCB_TD_BT: RCB_TD_BT {
             compatible = "zmk,behavior-tap-dance";
             label = "RCB_TD_BT";
             #binding-cells = <0>;
             bindings = <&kp RBRC>, <&kp GT>;
         };
+
         QUOTES_TD: QUOTES_TD {
             compatible = "zmk,behavior-tap-dance";
             label = "QUOTES_TD";
@@ -182,11 +190,11 @@
 
         mac_capslock_layer {
             bindings = <
-&none   &none  &none         &none     &none          &none                          &kp ESC  &none  &none  &none  &none  &kp DEL
-&none   &none  &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &kp PG_UP                      &none    &none  &none  &none  &none  &none
-&none   &none  &kp LEFT      &kp DOWN  &kp RIGHT      &kp PAGE_DOWN                  &none    &none  &none  &none  &none  &none
-&trans  &none  &none         &none     &none          &none          &mo BT    &none  &none    &none  &none  &none  &none  &trans
-               &trans        &trans    &trans         &none          &none    &mo BT  &none    &none  &none  &none
+&none   &none  &none         &none     &none          &none                            &kp ESC  &none  &none  &none  &none  &kp DEL
+&none   &none  &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &kp PG_UP                        &none    &none  &none  &none  &none  &none
+&none   &none  &kp LEFT      &kp DOWN  &kp RIGHT      &kp PAGE_DOWN                    &none    &none  &none  &none  &none  &none
+&trans  &none  &none         &none     &none          &none          &mo BT    &none   &none    &none  &none  &none  &none  &trans
+               &trans        &trans    &trans         &none          &none     &mo BT  &none    &none  &none  &none
             >;
 
             label = "Mac Lck";
@@ -194,11 +202,11 @@
 
         win_overlay_layer {
             bindings = <
-&kp LEFT_CONTROL  &trans  &trans  &trans  &trans        &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans            &trans  &trans  &trans  &trans        &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&mo 1             &trans  &trans  &trans  &trans        &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans            &trans  &trans  &trans  &trans        &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                          &trans  &trans  &kp LEFT_WIN  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&kp LEFT_CONTROL  &trans  &trans            &trans  &trans        &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans            &trans  &trans            &trans  &trans        &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&mo 1             &trans  &trans            &trans  &trans        &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans            &trans  &trans            &trans  &trans        &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                          &kp LEFT_CONTROL  &trans  &kp LEFT_WIN  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "Win Lyr";
@@ -217,6 +225,16 @@
             >;
 
             label = "BT";
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
