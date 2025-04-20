@@ -134,7 +134,7 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans  &trans  &trans    &trans    &trans     &trans                       &kp ESC  &trans  &trans  &trans  &trans  &kp DELETE
+&trans  &trans  &trans    &trans    &trans     &kp ESC                      &kp ESC  &trans  &trans  &trans  &trans  &kp DELETE
 &trans  &trans  &kp HOME  &kp UP    &kp END    &kp PG_UP                    &none    &none   &none   &none   &none   &none
 &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN                    &none    &none   &none   &none   &none   &none
 &trans  &none   &none     &none     &trans     &trans     &mo BT    &trans  &trans   &none   &none   &none   &none   &trans
@@ -190,7 +190,7 @@
 
         mac_capslock_layer {
             bindings = <
-&none   &none  &none         &none     &none          &none                            &kp ESC  &none  &none  &none  &none  &kp DEL
+&none   &none  &none         &none     &none          &kp ESC                          &kp ESC  &none  &none  &none  &none  &kp DEL
 &none   &none  &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &kp PG_UP                        &none    &none  &none  &none  &none  &none
 &none   &none  &kp LEFT      &kp DOWN  &kp RIGHT      &kp PAGE_DOWN                    &none    &none  &none  &none  &none  &none
 &trans  &none  &none         &none     &none          &none          &mo BT    &none   &none    &none  &none  &none  &none  &trans
